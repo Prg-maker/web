@@ -19,8 +19,8 @@ export default function Home() {
   });
  
   return (
-    <div className='bg-background h-screen flex flex-col justify-center items-center'>
-        <main className='w-[500px] h-[600px] bg-text rounded-md py-14 flex flex-col  items-center'>
+    <div className='bg-background h-screen flex flex-col justify-center items-center '>
+        <main className='w-[500px] h-[600px] bg-text rounded-md py-14 flex flex-col  items-center gap-10'>
 
           <section>
             <form className=''>
@@ -42,12 +42,18 @@ export default function Home() {
             </form>
           </section>
 
-          <section className=''>
+          <section className='bg-[#333333] w-[430px] h-[450px] rounded'>
                 
 
           </section>
 
         </main>
+
+        <footer className=' relative top-11' >
+
+        <p className='text-[#BDBDBD] '>Desenvolvido pelo o Daniel ♥️ 🚀.</p>
+
+        </footer>
     </div>
   )
 }
