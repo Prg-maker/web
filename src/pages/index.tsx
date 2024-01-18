@@ -1,22 +1,38 @@
 import Image from 'next/image'
 import { useState } from 'react';
 import { FaFileArrowUp } from "react-icons/fa6";
+import { FaRegCheckCircle , FaRegArrowAltCircleDown} from "react-icons/fa";
+import { MdOutlineDeleteOutline } from "react-icons/md";
+import { GiSandsOfTime } from "react-icons/gi";
+import { TiDeleteOutline } from "react-icons/ti";
+import { FiLayers } from 'react-icons/fi';
+import { FileName } from '@/components/FilaName';
 
 
 export default function Home() {
-
-  const fileInput = document.getElementById('file') as HTMLInputElement;
   const [fileName, setFileName] = useState("")
 
-  fileInput.addEventListener('change', (event) => {
-    const input = event.target as HTMLInputElement;
+  if (typeof document !== 'undefined') {
+    const fileInput = document.getElementById('file') as HTMLInputElement;
+    
+    fileInput.addEventListener('change', (event) => {
+      const input = event.target as HTMLInputElement;
 
-    if (input.files) {
-        // A propriedade files contém a lista de arquivos selecionados
-      const files = input.files;
-      setFileName(files[0].name)
-    }
-  });
+      if (input.files) {
+          // A propriedade files contém a lista de arquivos selecionados
+        console.log(input.files)
+        const files = input.files;
+        setFileName(files[0].name)
+      }
+    });
+    
+ }
+
+ function Dowloa(){
+  console.log("aaqui")
+}
+
+  
  
   return (
     <div className='bg-background h-screen flex flex-col justify-center items-center '>
@@ -35,16 +51,47 @@ export default function Home() {
 
                   </p>
                   <FaFileArrowUp color='#828282' />
-                  <input   type="file" id='file' name="file" className='hidden' />
+                  <input   type="file" id='file' name="file" className='hidden' accept='.zip,.rar,.7zip,.tar.xz,.tar'/>
                 </label>
 
               </div>
             </form>
           </section>
 
-          <section className='bg-[#333333] w-[430px] h-[450px] rounded'>
-                
+          <section className='bg-[#333333] w-[430px] h-[450px] rounded flex flex-col items-center py-4 gap-5 overflow-auto '>
+           
 
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+            <FileName fileName={fileName} status='fineshed' />
+        
+        
+  
           </section>
 
         </main>
