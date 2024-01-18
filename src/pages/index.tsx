@@ -58,38 +58,13 @@ export default function Home() {
             </form>
           </section>
 
-          <section className='bg-[#333333] w-[430px] h-[450px] rounded flex flex-col items-center py-4 gap-5 overflow-auto '>
+          <section className='bg-[#333333] w-[430px] h-[450px] rounded flex flex-col items-center py-4 gap-5 overflow-y-auto '>
            
 
             <FileName fileName={fileName} status='fineshed' />
             <FileName fileName={fileName} status='fineshed' />
             <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-            <FileName fileName={fileName} status='fineshed' />
-        
+           
         
   
           </section>
